@@ -1,0 +1,24 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=ALU
+[Library]
+ALU=.\ALU\ALU.lib
+[$LibMap$]
+ALU=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+[Files]
+/behavioral.vhd=-1
+[Files.Data]
+.\src\behavioral.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
