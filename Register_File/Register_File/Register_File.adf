@@ -17,3 +17,19 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Register_File\Register_File\Register_File.adf
+[Files]
+/structural.vhd=-1
+TestBench/register_file_TB.vhd=-1
+TestBench/register_file_TB_runtest.do=-1
+[Files.Data]
+.\src\structural.vhd=VHDL Source Code
+.\src\TestBench\register_file_TB.vhd=VHDL Test Bench
+.\src\TestBench\register_file_TB_runtest.do=Macro
+[Groups]
+TestBench=1
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=register_file|structural|0 
+ShowHide=ShowTopLevel
+Selected=
