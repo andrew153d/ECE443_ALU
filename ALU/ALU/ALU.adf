@@ -18,7 +18,13 @@ REFRESH_FLOW=1
 FAMILY=
 [Files]
 /behavioral.vhd=-1
+TestBench/alu_TB.vhd=-1
+TestBench/alu_TB_runtest.do=-1
 [Files.Data]
 .\src\behavioral.vhd=VHDL Source Code
+.\src\TestBench\alu_TB.vhd=VHDL Test Bench
+.\src\TestBench\alu_TB_runtest.do=Macro
 [SpecTracer]
 WindowVisible=0
+[Groups]
+TestBench=1
