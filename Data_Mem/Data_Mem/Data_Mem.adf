@@ -1,0 +1,24 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Data_Mem
+[Library]
+Data_Mem=.\Data_Mem\Data_Mem.lib
+[$LibMap$]
+Data_Mem=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+[SpecTracer]
+WindowVisible=0
+[Files]
+/Data_Mem.vhd=-1
+[Files.Data]
+.\src\Data_Mem.vhd=VHDL Source Code

@@ -1,0 +1,48 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Data_Men
+[Library]
+Data_Men=.\Data_Men\Data_Men.lib
+[$LibMap$]
+Data_Men=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Folders]
+Name0=Event Lists
+Directory0=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension0=lst
+Name1=Logs
+Directory1=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE484W_CPU\Data_Mem\Data_Men\
+Extension8=alintws
+[SpecTracer]
+WindowVisible=0
