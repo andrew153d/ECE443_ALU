@@ -3,33 +3,40 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=Processor
+
 [Library]
 Processor=.\Processor\Processor.lib
 data_mem=.\..\..\data_mem\data_mem\data_mem\data_mem.lib
 multiplexer=.\..\..\multiplexer\multiplexer\multiplexer\multiplexer.lib
+register_file=.\..\..\register_file\register_file\register_file\register_file.lib
+alu=.\..\..\alu\alu\alu\alu.lib
+
 [$LibMap$]
 Processor=.
 Active_lib=
 data_mem=.
 multiplexer=.
+register_file=.
+alu=.
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-[Files]
-/Processor.vhd=-1
-[Files.Data]
-.\src\Processor.vhd=VHDL Source Code
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
 [Folders]
 Name0=Event Lists
 Directory0=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE443_ALU\Processor\Processor\
@@ -58,3 +65,17 @@ Extension7=htm;html
 Name8=ALINT-PRO Workspaces
 Directory8=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_2\ECE443_ALU\Processor\Processor\
 Extension8=alintws
+
+[Groups]
+TestBench=1
+
+[Files]
+/Processor.vhd=-1
+TestBench/processor_TB.vhd=-1
+TestBench/processor_TB_runtest.do=-1
+
+[Files.Data]
+.\src\Processor.vhd=VHDL Source Code
+.\src\TestBench\processor_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor_TB_runtest.do=Macro
+
