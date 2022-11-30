@@ -181,7 +181,7 @@ begin
 		
 		--LOADING INSTRUCTION DONE
 		
-		for i in 0 to 15 loop
+		for i in 0 to 14 loop
 			instr_addr <= STD_LOGIC_VECTOR(to_signed(i, 8));
 			wait for 2000 ns;
 		end loop;

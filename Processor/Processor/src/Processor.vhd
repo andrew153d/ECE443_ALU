@@ -55,7 +55,7 @@ end component;
 signal instruction, A, B, C, D, E, F, G: STD_LOGIC_VECTOR(15 downto 0); 
 signal RdSrc, WrtSrc, RegWrite, ALUop0, ALUop1, ALUop2, Mem_Read, Mem_Write, MemToReg: STD_LOGIC;
 signal testAddr: STD_LOGIC_VECTOR(7 downto 0);
-signal ALU_status: STD_LOGIC_VECTOR(2 downto 0);
+signal ALU_status, test: STD_LOGIC_VECTOR(2 downto 0);
 
 begin
 	
@@ -65,24 +65,25 @@ begin
 	ALUop1 <= 		instruction(13);
 	ALUop2 <= 		instruction(14);
 	RdSrc <= 		instruction(14) and instruction(13);
-	WrtSrc <= 		not instruction(13);
-	RegWrite <= 	not(instruction(14) and instruction(13) and instruction(12));
+	WrtSrc <= 		instruction(14) and not instruction(13) and instruction(12);
+	RegWrite <= 	not(instruction(14) and instruction(13) and not instruction(12));
 	Mem_Read <= 	instruction(12);
 	Mem_Write <= 	instruction(14) and instruction(13) and not instruction(12);
 	MemToReg <= 	(not instruction(14)) or (not instruction(13));
 	
 	--outputs for debugging and showing results
-		Debug1 <= "000000000000"&instruction( 11 downto 8);
+		Debug1 <= A(3 downto 0)&instruction(3 downto 0)&instruction(11 downto 8)&"000"&RegWrite;--"000000000000"&instruction(11 downto 8);
 		Debug2 <= B;
-		Debug3 <= "000000000000000"&RegWrite;
-		Debug4 <= C;
+		Debug3 <= C;
+		Debug4 <= D; 
 	
 	IM: Data_Mem port map (instr_addr, instr,load_instr , '1', instruction);
 	
 	Addr1Mux: multiplexer port map ("000000000000"&instruction(7 downto 4),"000000000000"&instruction(11 downto 8), RdSrc, A);
 	RegWrMux: multiplexer port map(G, "00000000"&instruction(7 downto 0), WrtSrc, B); 
 	
-	RegisterFile: register_file port map(A(2 downto 0), B(2 downto 0),instruction(10 downto 8), B, RegWrite, C, D);
+	test<= instruction(2 downto 0) after 1 ns;
+	RegisterFile: register_file port map(A(2 downto 0), test,instruction(10 downto 8), B, RegWrite, C, D);
 	
 	ArithLU: alu port map(C, D, AlUop2, ALUop1, ALUop0, E, ALU_status);
 	

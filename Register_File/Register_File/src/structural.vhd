@@ -19,7 +19,7 @@ signal Registers: regArray;
 begin
 	process(all)
 	begin
-	if(RegWrite = '1') then
+	if(RegWrite = '1' and not RegWrite'event) then
 		Registers(to_integer(unsigned(WrReg))) <= WriteData after 100ns;
 	end if;	 
 	end process;
