@@ -11,9 +11,11 @@ port (Reg1, Reg2, WrReg :in STD_LOGIC_VECTOR(2 downto 0);
 end register_file;
 
 
-architecture structural of register_file is
+architecture structural of register_file is		
+
 type regArray is array (7 downto 0) of STD_LOGIC_VECTOR(15 downto 0);
-signal Registers: regArray;
+signal Registers: regArray;	  
+
 begin
 	process(all)
 	begin

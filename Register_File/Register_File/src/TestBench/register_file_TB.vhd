@@ -39,15 +39,63 @@ begin
 		port map (
 			Reg1 => Reg1,
 			Reg2 => Reg2,
-			WrReg => WrReg,
+			WrReg => WrReg,	
+			
 			WriteData => WriteData,
 			RegWrite => RegWrite,
+			
 			ReadData1 => ReadData1,
 			ReadData2 => ReadData2
 		);
 
 	-- Add your stimulus here ...
+process
+begin  
+	--initialize
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(0, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(0, 3)); 
+	WrReg <= STD_LOGIC_VECTOR(to_signed(0, 3));
+	WriteData <= STD_LOGIC_VECTOR(to_signed(0, 16));
+	RegWrite <= '0';
+	wait for 100ns;
+	
+	
+	for i in 0 to 7 loop
+		
+	--write 2 to register 0
+	WrReg <= STD_LOGIC_VECTOR(to_signed(i, 3));		
+	WriteData <= STD_LOGIC_VECTOR(to_signed(i, 16));
+	RegWrite <= '1';
+	wait for 10ns;
+	RegWrite <= '0';
+	wait for 110ns; 
+	
+	end loop;  
+	
+	 
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(0, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(1, 3));	
+	wait for 200ns;	 
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(2, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(3, 3));	
+	wait for 200ns;
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(4, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(5, 3));	
+	wait for 200ns;
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(6, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(7, 3));	
+	wait for 200ns;
+	Reg1 <= "UUU";		
+	Reg2 <= "UUU";		
+	
+	
 
+	
+	
+end process;
+	
+	
+	
 end TB_ARCHITECTURE;
 
 configuration TESTBENCH_FOR_register_file of register_file_tb is
