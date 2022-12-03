@@ -33,7 +33,7 @@ FAMILY=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=processor_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=processor_tb|TB_ARCHITECTURE|0    
 ShowHide=ShowTopLevel
 Selected=
 

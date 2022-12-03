@@ -28,7 +28,7 @@ WindowVisible=0
 TestBench=1
 
 [HierarchyViewer]
-HierarchyInformation=data_mem_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=data_mem_tb|TB_ARCHITECTURE|0   
 ShowHide=ShowTopLevel
 Selected=
 

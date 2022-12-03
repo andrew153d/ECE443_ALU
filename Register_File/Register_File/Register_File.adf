@@ -28,7 +28,7 @@ TestBench=1
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=register_file_tb|TB_ARCHITECTURE|0   
+HierarchyInformation=register_file_tb|TB_ARCHITECTURE|0    
 ShowHide=ShowTopLevel
 Selected=
 

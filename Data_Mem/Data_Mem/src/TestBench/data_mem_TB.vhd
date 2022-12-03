@@ -44,18 +44,20 @@ begin
 	
 	process 
 	begin				
-		MemRead <= '0';
-		MemWrite <= '1';
+		
 		
 		for i in 0 to 255 loop
+			
+		MemRead <= '0';
+		MemWrite <= '1';
 		Address <= STD_LOGIC_VECTOR(to_signed(i, 8));
 		WriteData <= STD_LOGIC_VECTOR(to_signed(i, 16));
 		wait for 30ns;
-		end loop;  
-		
+		  
 		MemWrite <= '0';
-		MemRead <= '1';
-		for i in 0 to 255 loop
+		MemRead <= '1';	
+		
+		wait for 10 ns;
 		Address <= STD_LOGIC_VECTOR(to_signed(i, 8));
 		wait for 40ns;
 		end loop;
