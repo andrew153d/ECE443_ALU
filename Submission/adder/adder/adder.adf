@@ -1,0 +1,84 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=adder
+
+[Library]
+adder=.\adder\adder.lib
+full_adder=.\..\..\full_adder\full_adder\full_adder\full_adder.lib
+
+[$LibMap$]
+adder=.
+Active_lib=
+full_adder=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\Full_Adder\Full_Adder\src
+
+[SpecTracer]
+WindowVisible=0
+
+[Folders]
+Name0=Event Lists
+Directory0=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension0=lst
+Name1=Logs
+Directory1=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project_1\adder\adder\
+Extension8=alintws
+
+[HierarchyViewer]
+HierarchyInformation=adder_tb|testbench_for_adder|1        
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/adder.vhd=-1
+/wav.asdb=-1
+/wav.awc=-1
+/testBench.asdb=-1
+/testBench.awc=-1
+TestBench/adder_TB.vhd=-1
+TestBench/adder_TB_runtest.do=-1
+
+[Files.Data]
+.\src\adder.vhd=VHDL Source Code
+.\src\wav.asdb=Accelerated Waveform File
+.\src\wav.awc=Accelerated Waveform Configuration
+.\src\testBench.asdb=Accelerated Waveform File
+.\src\testBench.awc=Accelerated Waveform Configuration
+.\src\TestBench\adder_TB.vhd=VHDL Test Bench
+.\src\TestBench\adder_TB_runtest.do=Macro
+

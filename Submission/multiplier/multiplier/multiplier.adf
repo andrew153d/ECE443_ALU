@@ -1,0 +1,50 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=multiplier
+
+[Library]
+multiplier=.\multiplier\multiplier.lib
+adder=.\..\..\adder\adder\adder\adder.lib
+
+[$LibMap$]
+multiplier=.
+Active_lib=
+adder=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=multiplier_tb|TB_ARCHITECTURE|0               
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/multiplier.vhd=-1
+/testBench.asdb=-1
+/testBench.awc=-1
+TestBench/multiplier_TB.vhd=-1
+TestBench/multiplier_TB_runtest.do=-1
+
+[Files.Data]
+.\src\multiplier.vhd=VHDL Source Code
+.\src\testBench.asdb=Accelerated Waveform File
+.\src\testBench.awc=Accelerated Waveform Configuration
+.\src\TestBench\multiplier_TB.vhd=VHDL Test Bench
+.\src\TestBench\multiplier_TB_runtest.do=Macro
+

@@ -1,0 +1,15 @@
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Version]
+Version=11.1
+[Designs]
+adder=.\adder\adder.adf
+[Expand]
+adder=1
+full_adder=0
+[Settings]
+Active=adder

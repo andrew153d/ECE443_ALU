@@ -1,0 +1,68 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=full_adder
+
+[Library]
+Full_Adder=.\Full_Adder\Full_Adder.lib
+
+[$LibMap$]
+Full_Adder=.
+Active_lib=
+half_adder=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Half_Adder\Half_Adder\src
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=full_adder|structural|0   
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name0=Event Lists
+Directory0=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension0=lst
+Name1=Logs
+Directory1=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=C:\Users\Andre\Documents\ODU\ODU_Fall_2022\ECE443\Project 1\Full_Adder\Full_Adder\
+Extension8=alintws
+
+[Files]
+/full_adder.vhd=-1
+
+[Files.Data]
+.\src\full_adder.vhd=VHDL Source Code
+

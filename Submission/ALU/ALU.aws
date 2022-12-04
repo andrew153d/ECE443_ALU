@@ -1,0 +1,17 @@
+[Version]
+Version=11.1
+[Designs]
+alu=.\ALU\ALU.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+alu=1
+subtractor=0
+multiplier=0
+multiplexer=0
+[Settings]
+Active=alu

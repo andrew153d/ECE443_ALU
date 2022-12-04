@@ -1,0 +1,15 @@
+[Version]
+Version=11.1
+[Designs]
+subtractor=.\subtractor\subtractor.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+subtractor=1
+adder=0
+[Settings]
+Active=subtractor
