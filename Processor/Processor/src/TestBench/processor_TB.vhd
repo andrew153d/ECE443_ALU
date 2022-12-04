@@ -139,7 +139,7 @@ begin
 		load_instr <='0';
 		wait for 100ns;	
 		
-		--load instruction 10
+		--load instruction A
 		instr_addr <= STD_LOGIC_VECTOR(to_signed(10, 8));
 		instr <= x"4401"; 
 		load_instr <= '1';
@@ -147,7 +147,7 @@ begin
 		load_instr <='0';
 		wait for 100ns;
 		
-		--load instruction 11
+		--load instruction B
 		instr_addr <= STD_LOGIC_VECTOR(to_signed(11, 8));
 		instr <= x"630B"; 
 		load_instr <= '1';
@@ -155,7 +155,7 @@ begin
 		load_instr <='0';
 		wait for 100ns;
 		
-		--load instruction 12
+		--load instruction D
 		instr_addr <= STD_LOGIC_VECTOR(to_signed(12, 8));
 		instr <= x"640A"; 
 		load_instr <= '1';
@@ -163,7 +163,7 @@ begin
 		load_instr <='0';
 		wait for 100ns;	
 		
-		--load instruction 13
+		--load instruction E
 		instr_addr <= STD_LOGIC_VECTOR(to_signed(13, 8));
 		instr <= x"760A"; 
 		load_instr <= '1';
@@ -171,7 +171,7 @@ begin
 		load_instr <='0';
 		wait for 100ns;
 		
-		--load instruction 14
+		--load instruction F
 		instr_addr <= STD_LOGIC_VECTOR(to_signed(14, 8));
 		instr <= x"770B"; 
 		load_instr <= '1';

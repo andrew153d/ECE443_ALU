@@ -85,8 +85,19 @@ begin
 	Reg1 <= STD_LOGIC_VECTOR(to_signed(6, 3));		
 	Reg2 <= STD_LOGIC_VECTOR(to_signed(7, 3));	
 	wait for 200ns;
+	Reg1 <= STD_LOGIC_VECTOR(to_signed(4, 3));		
+	Reg2 <= STD_LOGIC_VECTOR(to_signed(5, 3));	
+	WrReg <= STD_LOGIC_VECTOR(to_signed(4, 3));		
+	WriteData <= STD_LOGIC_VECTOR(to_signed(15, 16));
+	RegWrite <= '1';	
+	wait for 400 ns; 
+	RegWrite <= '0';
+	WrReg <= STD_LOGIC_VECTOR(to_signed(5, 3));
+	wait for 200 ns;
+	
 	Reg1 <= "UUU";		
-	Reg2 <= "UUU";		
+	Reg2 <= "UUU";	
+	wait for 1 sec;
 	
 	
 

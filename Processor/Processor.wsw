@@ -2,5 +2,5 @@
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\Processor\src/TestBench/processor_TB.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\Register_File\Register_File/src/structural.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\multiplexer\multiplexer/src/multiplexer.vhd|]
 TemplateId=0

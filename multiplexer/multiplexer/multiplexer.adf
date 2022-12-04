@@ -23,6 +23,6 @@ FAMILY=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=multiplexer|structural|0 
+HierarchyInformation=multiplexer|structural|0   
 ShowHide=ShowTopLevel
 Selected=

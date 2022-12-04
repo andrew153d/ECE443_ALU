@@ -81,9 +81,9 @@ begin
 	
 	Addr1Mux: multiplexer port map ("000000000000"&instruction(7 downto 4),"000000000000"&instruction(11 downto 8), RdSrc, A);
 	RegWrMux: multiplexer port map(G, "00000000"&instruction(7 downto 0), WrtSrc, B); 
-	
-	test<= instruction(2 downto 0) after 1 ns;
-	RegisterFile: register_file port map(A(2 downto 0), test,instruction(10 downto 8), B, RegWrite, C, D);
+											  
+	test<= instruction(10 downto 8);
+	RegisterFile: register_file port map(A(2 downto 0), instruction(2 downto 0), test, B, RegWrite, C, D);
 	
 	ArithLU: alu port map(C, D, AlUop2, ALUop1, ALUop0, E, ALU_status);
 	

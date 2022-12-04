@@ -13,6 +13,7 @@ data_mem=.\..\..\data_mem\data_mem\data_mem\data_mem.lib
 multiplexer=.\..\..\multiplexer\multiplexer\multiplexer\multiplexer.lib
 register_file=.\..\..\register_file\register_file\register_file\register_file.lib
 alu=.\..\..\alu\alu\alu\alu.lib
+multiplexer1=.\..\..\multiplexer\multiplexer\multiplexer\multiplexer.lib
 
 [$LibMap$]
 Processor=.
@@ -21,6 +22,7 @@ data_mem=.
 multiplexer=.
 register_file=.
 alu=.
+multiplexer1=.
 
 [Settings]
 FLOW_TYPE=HDL
@@ -33,7 +35,7 @@ FAMILY=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=processor_tb|TB_ARCHITECTURE|0     
+HierarchyInformation=processor_tb|TB_ARCHITECTURE|0        
 ShowHide=ShowTopLevel
 Selected=
 
